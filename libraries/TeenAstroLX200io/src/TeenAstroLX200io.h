@@ -6,10 +6,14 @@
 #ifdef ARDUINO_ESP8266_WEMOS_D1MINI
 #define Ser Serial
 #endif
+
 #ifdef ARDUINO_LOLIN_C3_MINI
 #define Ser Serial1
 #endif
 
+#ifdef ARDUINO_NodeMCU_32S
+#define Ser Serial
+#endif
 
 #define TIMEOUT_CMD 30         
 #define TIMEOUT_WEB 15

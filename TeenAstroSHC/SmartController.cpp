@@ -16,8 +16,9 @@ void SmartHandController::setup(
 {
 #ifdef ARDUINO_LOLIN_C3_MINI
   Ser.begin(SerialBaud, SERIAL_8N1, RX, TX);
-#else
-  Ser.begin(SerialBaud);
+#endif
+#ifdef ARDUINO_NodeMCU_32S
+  Ser.begin(SerialBaud, SERIAL_8N1, RX, TX);
 #endif
 
   if (EEPROM.length() == 0)

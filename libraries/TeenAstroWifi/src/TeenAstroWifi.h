@@ -25,6 +25,13 @@
 #include <HTTPUpdateServer.h>
 #endif
 
+#ifdef ARDUINO_NodeMCU_32S
+#include <WiFi.h>
+#include <WebServer.h>
+#include <WiFiAP.h>
+#include <HTTPUpdateServer.h>
+#endif
+
 #ifdef ARDUINO_ARCH_ESP32
 #include <WiFi.h>
 #include <WebServer.h>

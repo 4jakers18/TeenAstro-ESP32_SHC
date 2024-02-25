@@ -505,7 +505,12 @@ void TeenAstroWifi::setup()
     }
     WiFi.softAPdisconnect(true);
     WiFi.mode(WIFI_STA);
+
+#ifdef ARDUINO_NodeMCU_32S
+    WiFi.setSleep(false);
+#else
     WiFi.setSleepMode(WiFiSleepType::WIFI_NONE_SLEEP);
+#endif
     WiFi.begin(wifi_sta_ssid[activeWifiMode], wifi_sta_pwd[activeWifiMode]);
 #ifdef ARDUINO_LOLIN_C3_MINI
     WiFi.setTxPower(WIFI_POWER_8_5dBm);

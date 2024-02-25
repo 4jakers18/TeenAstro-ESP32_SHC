@@ -95,3 +95,26 @@
 #define B_PIN_UP_6 true
 #endif
 
+#ifdef ARDUINO_NodeMCU_32S
+#define SERIAL_BAUD 57600
+#define DEBUG_OFF
+// the hand controller buttons
+#define B_PIN0 12               // Shift
+#define B_PIN1 32               // N
+#define B_PIN2 14               // S
+#define B_PIN3 23               // E
+#define B_PIN4 27               // W
+#define B_PIN5 17               // F
+#define B_PIN6  5               // f
+
+#define B_PIN_UP_0 false        // true for active LOW, false if active HIGH
+#define B_PIN_UP_1 false
+#define B_PIN_UP_2 false
+#define B_PIN_UP_3 false
+#define B_PIN_UP_4 false
+#define B_PIN_UP_5 true
+#define B_PIN_UP_6 true
+#define A_SCREEN 36
+#endif
+
+
