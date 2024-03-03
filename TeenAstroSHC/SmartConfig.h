@@ -100,9 +100,9 @@
 #define DEBUG_OFF
 // the hand controller buttons
 #define B_PIN0 12               // Shift
-#define B_PIN1 32               // N
-#define B_PIN2 14               // S
-#define B_PIN3 23               // E
+#define B_PIN1 14               // N
+#define B_PIN2 32               // S
+#define B_PIN3 33               // E
 #define B_PIN4 27               // W
 #define B_PIN5 17               // F
 #define B_PIN6  5               // f
